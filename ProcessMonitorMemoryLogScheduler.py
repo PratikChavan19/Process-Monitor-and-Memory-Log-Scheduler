@@ -4,7 +4,7 @@ import time
 import schedule
 from sys import *
 
-def ProcessDisplay(log_dir = "Marvellous"):
+def ProcessDisplay(log_dir = "ProcessLogger"):
     listprocess = []
     
     if not os.path.exists(log_dir):
@@ -14,10 +14,10 @@ def ProcessDisplay(log_dir = "Marvellous"):
             pass
     
     separator = "-" * 80
-    log_path = os.path.join(log_dir,"MarvellousLog%s.log" %(time.ctime().replace(":","-")))
+    log_path = os.path.join(log_dir,"ProcessLog%s.log" %(time.ctime().replace(":","-")))
     f = open(log_path,'w')
     f.write(separator + "\n")
-    f.write("Marvellous Infosystems Process Logger : "+time.ctime()+"\n")
+    f.write("Process Logger : "+time.ctime()+"\n")
     f.write(separator + "\n")
 
     for proc in psutil.process_iter():
@@ -34,7 +34,7 @@ def ProcessDisplay(log_dir = "Marvellous"):
         f.write("%s\n" % element)
 
 def main():
-    print("----Marvellous Infosystems----")
+    print("----Process Logger----")
 
     print("Application name : ",argv[0])
 
