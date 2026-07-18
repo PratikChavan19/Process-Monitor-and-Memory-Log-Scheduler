@@ -119,13 +119,3 @@ Logs may grow large over time
 No real-time visualization
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-🔮 Future Enhancements :
-
-📊 Add real-time dashboard
-📈 Graph-based visualization
-🧵 Multi-threaded logging
-📧 Email alerts for high memory usage
-🗃️ Log compression & rotation
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
